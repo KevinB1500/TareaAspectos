@@ -21,28 +21,43 @@ public class Sujeto implements EventHandler<ActionEvent> {
 		createContent();
 	}
 	private void createContent() {
-		 btn1 = new Button("Color 1");
-	     btn2 = new Button("Color 2");
-	     btn3 = new Button("Color 3");
+		 btn1 = new Button("Verde");
+	     btn2 = new Button("Amarillo");
+	     btn3 = new Button("Negro");
+	     
 	     root = new VBox();
+	     
 	     root.getChildren().addAll(btn1,btn2,btn3);
-	     root.setMargin(btn1, new Insets(20, 20, 20, 20)); 
-	     root.setMargin(btn2, new Insets(20, 20, 20, 20)); 
-	     root.setMargin(btn3, new Insets(20, 20, 20, 20)); 
+	     
+	     VBox.setMargin(btn1, new Insets(20, 20, 20, 20)); 
+	     VBox.setMargin(btn2, new Insets(20, 20, 20, 20)); 
+	     VBox.setMargin(btn3, new Insets(20, 20, 20, 20)); 
+	     
 	     root.setAlignment(Pos.CENTER);
+	     
+	     btn1.setOnAction((ActionEvent event) -> {
+	    	 root.setStyle("-fx-background-color: MediumSeaGreen");
+	     });
+	     
+	     btn2.setOnAction((ActionEvent event) -> {
+	    	 root.setStyle("-fx-background-color: Yellow");
+	     });
+	     
+	     btn3.setOnAction((ActionEvent event) -> {
+	    	 root.setStyle("-fx-background-color: Black");
+	     });
+	     
 	}
 	
 	public VBox getRoot() {	
 		return root;
 	}
-	
 	@Override
 	public void handle(ActionEvent event) {
-		// TODO Auto-generated method stub
+		
 		
 	}
-
-
+	
 
 	
 

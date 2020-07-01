@@ -40,15 +40,15 @@ public class Sujeto implements EventHandler<ActionEvent> {
 	     root.getVentana().setAlignment(Pos.CENTER);
 	     
 	     btn1.setOnAction((ActionEvent event) -> {
-	    	 root.getVentana().setStyle("-fx-background-color: MediumSeaGreen");
+	    	 root.actualizarColor("MediumSeaGreen");
 	     });
 	     
 	     btn2.setOnAction((ActionEvent event) -> {
-	    	 root.getVentana().setStyle("-fx-background-color: Yellow");
+	    	 root.actualizarColor("Yellow");
 	     });
 	     
 	     btn3.setOnAction((ActionEvent event) -> {
-	    	 root.getVentana().setStyle("-fx-background-color: Black");
+	    	 root.actualizarColor("Black");
 	     });
 	     
 	}

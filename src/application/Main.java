@@ -1,5 +1,7 @@
 package application;
 	
+import java.util.ArrayList;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -14,7 +16,9 @@ import javafx.scene.layout.VBox;
 
 
 public class Main extends Application {
+
 	@Override
+	
     public void start(Stage primaryStage) {
         Sujeto ventana = new Sujeto();
         Scene scene = new Scene(ventana.getRoot(), 300, 250);
@@ -28,6 +32,7 @@ public class Main extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
     }
     
 }
